@@ -1,0 +1,142 @@
+:root {
+    --color-span: #89C5CC;
+    --color-nav: #1F1534;
+    --color-bottom: #69B99D;
+    --color-p: #7D7987;
+    --font-h1-nav: 'Mulish';
+    --font-p: 'Open Sans';
+    --font-bottom: 'DM Sans';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+    min-height: 100vh;
+}
+
+.page {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 58px;
+}
+
+nav ul {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+    
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    color: var(--color-nav);
+    font-size: 18px;
+    text-decoration: none;
+
+    opacity: 0.5;
+}
+
+ul li a:hover {
+    opacity: 1;
+    font-weight: 700;
+
+    transition: 0.5s ease;
+}
+
+section h1, ul {
+    font-family: var(--font-h1-nav);
+}
+
+section h1 {
+    font-size: 49px;
+    line-height: 56px;
+    color: #000;
+    font-weight: 400;
+}
+
+h1 span {
+    color: var(--color-span);
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    width: 489px;
+}
+
+section p {
+    width: 438px;
+    font-family: var(--font-p);
+    color: var(--color-p);
+    font-size: 14px;
+    line-height: 28px;
+
+    margin: 40px 0;
+}
+
+section button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 32px 15px;
+
+    text-transform: uppercase;
+    font-family: var(--font-bottom);
+    color: #F9F9F9;
+
+    background-color: var(--color-bottom);
+    border-radius: 4px;
+    border: none;
+}
+
+section button:hover {
+    background-color: #1F1534;
+    transition: 0.5s ease;
+
+    cursor: pointer;
+}
+
+footer {
+    font-family: var(--font-p);
+    font-size: 14px;
+    line-height: 28px;
+
+    margin-top: 83px;
+    text-align: center;
+}
+
+footer a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover {
+    color: var(--color-nav);
+}
+
+.balls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
